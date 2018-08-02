@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "127148430127",
+    "firebase_url": "https://hajj-hackathon-33322.firebaseio.com",
+    "project_id": "hajj-hackathon-33322",
+    "storage_bucket": "hajj-hackathon-33322.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127148430127:android:2cf7069a49b66d96",
+        "android_client_info": {
+          "package_name": "com.example.esraa.eblaghhajj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127148430127-v9177gguomap4g28g26rhv8dfpe9depb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.esraa.eblaghhajj",
+            "certificate_hash": "2e1ec2c2b5bdeabcd8c17f19946884ca0ace946c"
+          }
+        },
+        {
+          "client_id": "127148430127-ir3novrkln57hgbgmudvstmcdjui0opc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDifQPR4dd3D43aZ9NVE_GrPyxxKfoZAD0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127148430127-ir3novrkln57hgbgmudvstmcdjui0opc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127148430127:android:453d64876d3306e2",
+        "android_client_info": {
+          "package_name": "com.example.user.ambulance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127148430127-k46s43s0s2o9i0lo2jj3ba0hcq8uhh4r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.ambulance",
+            "certificate_hash": "2e1ec2c2b5bdeabcd8c17f19946884ca0ace946c"
+          }
+        },
+        {
+          "client_id": "127148430127-ir3novrkln57hgbgmudvstmcdjui0opc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDifQPR4dd3D43aZ9NVE_GrPyxxKfoZAD0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127148430127-ir3novrkln57hgbgmudvstmcdjui0opc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127148430127:android:224777089a2531e5",
+        "android_client_info": {
+          "package_name": "com.example.user.hajj"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127148430127-mu4o9f896jtouktp4fvaf4g4ea9lnq7n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.hajj",
+            "certificate_hash": "2e1ec2c2b5bdeabcd8c17f19946884ca0ace946c"
+          }
+        },
+        {
+          "client_id": "127148430127-ir3novrkln57hgbgmudvstmcdjui0opc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDifQPR4dd3D43aZ9NVE_GrPyxxKfoZAD0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127148430127-ir3novrkln57hgbgmudvstmcdjui0opc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
