@@ -1,10 +1,10 @@
 package com.example.user.ambulance;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -16,6 +16,7 @@ public class MapActivity extends AppCompatActivity {
     private Object[] dropOffCoordinates = {21.629936733505197, 39.154574324853456};
     private String url;
     private Button goButton;
+    private boolean btnStatus = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,10 +27,14 @@ public class MapActivity extends AppCompatActivity {
         goButton = (Button) findViewById(R.id.goButton);
         goButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                // Disable the button during the request
-                goButton.setEnabled(false);
-                Log.e("Button","Button disabled");
-                //TOD0: open next activity
+                if(!btnStatus) {
+                    goButton.setText("وصلت");
+                    btnStatus = true;
+                }
+                else {
+                    Intent intent = new Intent(MapActivity.this, QRActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
