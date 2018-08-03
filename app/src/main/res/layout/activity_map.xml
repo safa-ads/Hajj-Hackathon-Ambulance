@@ -9,7 +9,7 @@ android:id="@+id/mainLayout"
     >
 
 
-<ImageView
+    <ImageView
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:id="@+id/imageView"
@@ -18,6 +18,17 @@ android:id="@+id/mainLayout"
     android:layout_alignParentTop="true"
     android:background="@color/colorWhite"
     />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="حالة إغماء"
+        android:textColor="@color/colorWhite"
+        android:textSize="24dp"
+        android:background="#EBB12C"
+        android:gravity="center"
+        android:layout_marginTop="25dp"/>
 
 <LinearLayout
     android:orientation="vertical"
@@ -35,10 +46,10 @@ android:id="@+id/mainLayout"
         android:layout_width="312dp"
         android:layout_height="48dp"
         android:text="اذهب"
+        android:textSize="24dp"
         android:textColor="@color/colorWhite"
         android:id="@+id/goButton"
         android:background="@drawable/button_background"
-        android:gravity="top|center_horizontal"
-        android:paddingTop="15dp" />
+        android:gravity="center" />
 </LinearLayout>
 </RelativeLayout>

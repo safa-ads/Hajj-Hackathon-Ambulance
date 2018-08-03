@@ -128,7 +128,7 @@ public class QRActivity extends AppCompatActivity implements ZXingScannerView.Re
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                scannerView.resumeCameraPreview(QRActivity.this);
+                finish();
             }
         });
         builder.setMessage(result.getText());
