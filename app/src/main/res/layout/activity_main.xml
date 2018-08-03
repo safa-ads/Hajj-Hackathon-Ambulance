@@ -11,16 +11,19 @@
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <TextView android:id="@+id/simpleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="لا يوجد حالات إستغاثه الآن"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black-small-caps"
+        android:background="#2D3E50"/>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
