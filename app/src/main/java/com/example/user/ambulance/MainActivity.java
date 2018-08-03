@@ -1,13 +1,14 @@
 package com.example.user.ambulance;
 
+import android.app.AlertDialog;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.RemoteViews;
-import android.widget.Toast;
 
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
@@ -35,16 +36,22 @@ public class MainActivity extends AppCompatActivity {
         notificationContext = this;
         NotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         builder = new NotificationCompat.Builder(this);
-        //remoteViews = new RemoteViews(getPackageName(),R.layout.custom_notification);
 
         mDatabase = FirebaseDatabase.getInstance().getReference("Users");
         mDatabase.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                //sendNotification("Emergency case", "حاله إستغاثه جديده");
-                Toast.makeText(MainActivity.this, "حاله إستغاثه جديده", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, MapActivity.class);
-                startActivity(intent);
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setMessage("حاله إغماء!")
+                        .setTitle("إستغاثه جديده!")
+                        .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                                startActivity(intent);
+                            }
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
             }
 
             @Override
