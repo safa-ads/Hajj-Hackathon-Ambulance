@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+tools:context="com.example.user.ambulance.MapActivity"
+android:background="@color/colorGrey"
+android:id="@+id/mainLayout"
+    >
+
+
+    <ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/imageView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorWhite"
+    />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="حالة إغماء"
+        android:textColor="@color/colorWhite"
+        android:textSize="24dp"
+        android:background="#EBB12C"
+        android:gravity="center"
+        android:layout_marginTop="25dp"/>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="182dp"
+    android:background="@drawable/gradient_background"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="50dp"
+    android:clipToPadding="false">
+
+    <Button
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:text="اذهب"
+        android:textSize="24dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/goButton"
+        android:background="@drawable/button_background"
+        android:gravity="center" />
+</LinearLayout>
+</RelativeLayout>

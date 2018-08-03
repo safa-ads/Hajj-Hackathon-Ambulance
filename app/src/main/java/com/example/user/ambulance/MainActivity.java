@@ -2,6 +2,7 @@ package com.example.user.ambulance;
 
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -40,8 +41,10 @@ public class MainActivity extends AppCompatActivity {
         mDatabase.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                sendNotification("Emergency case", "حاله إستغاثه جديده");
-                Toast.makeText(MainActivity.this, "Hoppaa", Toast.LENGTH_LONG).show();
+                //sendNotification("Emergency case", "حاله إستغاثه جديده");
+                Toast.makeText(MainActivity.this, "حاله إستغاثه جديده", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                startActivity(intent);
             }
 
             @Override
@@ -63,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
             }
+
         });
 
     }
