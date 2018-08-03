@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+tools:context="com.example.user.ambulance.MapActivity"
+android:background="@color/colorGrey"
+android:id="@+id/mainLayout"
+    >
+
+
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/imageView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/colorWhite"
+    />
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="182dp"
+    android:background="@drawable/gradient_background"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="72dp"
+    android:clipToPadding="false">
+
+    <Button
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:text="Rescue"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/goButton"
+        android:background="@drawable/button_background"
+        android:gravity="top|center_horizontal"
+        android:paddingTop="15dp" />
+</LinearLayout>
+</RelativeLayout>
